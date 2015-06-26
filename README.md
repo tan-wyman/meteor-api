@@ -14,8 +14,6 @@ Meteor javascript with autocomplete, code snippets, color-coded grammar, and syn
 
 Simply clone this repo into your ~/.atom/packages directory
 
-If you'd like to permanently make all javascript default to the ``Javascript (Meteor)`` grammar, disable the ``language-javascript`` package.
-
 ---------------------------------------
 #### Setting Up Atom As an Integrated Development Environment
 
@@ -37,13 +35,21 @@ Minimap
 Vim-Mode
 ````
 
+To use spacebars in html by default add the following to your config.cson under global:
+````
+'file-types':
+  'html': 'text.html.spacebars'
+  'js': 'source.js'
+````
+
+If you'd like to permanently make all javascript default to the ``Javascript (Meteor)`` grammar, disable the ``language-javascript`` package.
+
 ---------------------------------------
 #### Acknowledgements / Contributors
 
 * ThusStyles for piecing together the original [meteor-snippets](https://github.com/ThusStyles/meteor-snippets) atom package
 * zaku-eu for [language-spacebars](https://atom.io/packages/language-spacebars)
 * Awatson1978 for the [meteor-api](https://github.com/awatson1978/meteor-api) atom package
-
 
 ---------------------------------------
 #### Color Coded Meteor Syntax Example
