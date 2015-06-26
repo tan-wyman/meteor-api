@@ -18,12 +18,11 @@ Simply clone this repo into your ~/.atom/packages directory
 #### Setting Up Atom As an Integrated Development Environment
 
 Meteor specific packages:
-````sh
+````
 Beautify
 Handlebars
 Jshint
 Prettify
-Language-Spacebars
 Meteor Api
 ````
 
