@@ -17,12 +17,6 @@ Simply clone this repo into your ~/.atom/packages directory
 If you'd like to permanently make all javascript default to the ``Javascript (Meteor)`` grammar, disable the ``language-javascript`` package.
 
 ---------------------------------------
-#### Color Coded Meteor Syntax  
-
-![Meteor-Api Code Sample](https://raw.githubusercontent.com/awatson1978/meteor-api/master/screenshots/code-sample.png)  
-
-
----------------------------------------
 #### Setting Up Atom As an Integrated Development Environment
 
 Meteor specific packages:
@@ -51,5 +45,7 @@ Vim-Mode
 * Awatson1978 for the [meteor-api](https://github.com/awatson1978/meteor-api) atom package
 
 
-
 ---------------------------------------
+#### Color Coded Meteor Syntax Example
+
+![Meteor-Api Code Sample](https://raw.githubusercontent.com/tan-wyman/meteor-api/master/screenshots/code-sample.png)  
