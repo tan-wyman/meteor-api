@@ -1,9 +1,9 @@
 {
   "name": "meteor-api",
   "main": "./lib/meteor-api",
-  "version": "2.19.0",
+  "version": "2.19.1",
   "description": "Meteor API for the Atom editor.",
-  "repository": "https://github.com/awatson1978/meteor-api",
+  "repository": "https://github.com/tan-wyman/meteor-api",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0",
