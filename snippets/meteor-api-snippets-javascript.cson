@@ -450,7 +450,7 @@
       'prefix': 'events'
       'body': '
         Template.${1:name}.events({
-        \n\t"click ${2:#event}": function(event, template){
+        \n\t"click ${2:#foo}": function(event, template){
         \n\t\t${3:}
         \n\t}
         \n});
@@ -480,8 +480,8 @@
       \n\t\t${3:}
       \n\t}
       \n});
-      \n\nTemplate.${7:name}.events({
-      \n\t"${4:click #foo}": function(event, template){
+      \n\nTemplate.${1:name}.events({
+      \n\t"click ${4:#foo}": function(event, template){
       \n\t\t${5:}
       \n\t}
       \n});
