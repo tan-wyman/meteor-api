@@ -30,7 +30,7 @@
     'name': 'api.mongo.collection'
   }
   {
-    'match': 'Template.(.*).events|Template.(.*).helpers|Template.(.*).rendered|Template.(.*).created|Template.(.*).destroyed|Template.registerHelper'
+    'match': 'Template.(.*).events|Template.(.*).helpers|Template.(.*).onRendered|Template.(.*).onCreated|Template.(.*).onDestroyed|Template.registerHelper'
     'name': 'api.meteor.template'
   }
   {

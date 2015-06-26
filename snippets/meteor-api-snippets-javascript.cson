@@ -56,6 +56,7 @@
     'prefix': 'isCordova'
     'body': 'if(Meteor.isCordova){\n\t${1:}\n}'
 
+
   'Meteor.startup':
     'prefix': 'startup'
     'body': 'Meteor.startup(function(){\n\t${1:}\n});'
@@ -436,9 +437,15 @@
 #===================================================
 # Templates Snippets
 
-  'Template Rendered':
+
+  'Template onRendered':
     'prefix': 'rendered'
-    'body': 'Template.${1:name}.onRendered = function(){\n\t${2}\n}'
+    'body': '
+      Template.${1:name}.onRendered(function(){
+      \n\t${2:}
+      \n});
+    '
+
   'Template Events':
       'prefix': 'events'
       'body': '
@@ -448,47 +455,48 @@
         \n\t}
         \n});
       '
-  'Template Created':
+
+  'Template onCreated':
     'prefix': 'created'
     'body': '
-      Template.${1:name}.onCreated = function(){
+      Template.${1:name}.onCreated(function(){
       \n\t${2:}
-      \n};
+      \n});
     '
 
-  'Template Destroyed':
+  'Template onDestroyed':
     'prefix': 'destroyed'
     'body': '
-      Template.${1:name}.onDestroyed = function(){
+      Template.${1:name}.onDestroyed(function(){
       \n\t${2:}
-      \n};
+      \n});
     '
 
   'Template':
     'prefix': 'Template'
     'body': '
       \nTemplate.${1:name}.helpers({
-      \n\tcreate: function(){
-      \n\t\t${2:}
-      \n\t},
-      \n\trendered: function(){
+      \n\t${2:}: function(){
       \n\t\t${3:}
-      \n\t},
-      \n\tdestroyed: function(){
-      \n\t\t${4:}
-      \n\t},
-      \n});
-      \n\nTemplate.${9:name}.events({
-      \n\t"${5:click #foo}": function(event, template){
-      \n\t\t${6:}
       \n\t}
       \n});
-      \n${7:}
+      \n\nTemplate.${7:name}.events({
+      \n\t"${4:click #foo}": function(event, template){
+      \n\t\t${5:}
+      \n\t}
+      \n});
+      \n${6:}
     '
 
   'Template Helpers':
     'prefix': 'helpers'
-    'body': 'Template.${1:name}.helpers({\n\trendered: function(){\n\t\t${2}\n\t}\n});'
+    'body': '
+      \nTemplate.${1:name}.helpers({
+      \n\t${2:}: function(){
+      \n\t\t${3:}
+      \n\t}
+      \n});
+    '
 
   'Template.registerHelper':
     'prefix': 'registerHelper'
